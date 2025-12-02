@@ -1,0 +1,56 @@
+* {
+  color: #f4efe0;
+  background-color: #070322;
+}
+nav,
+a {
+  background: #c9a04c;
+  height: 60px;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Playfair Display", serif;
+}
+#def {
+  color: #c9a04c;
+  text-align: center;
+  font-size: 40px;
+}
+p {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+span {
+  color: #c9a04c;
+  font-weight: bold;
+}
+.gradient-line {
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #c9a04c, #f4efe0);
+}
+
+h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 9px;
+  size: 50%;
+}
+table {
+  position: relative;
+}
