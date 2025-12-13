@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new Account</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Section -->
+    <style>
+      * {
+        font-family: "Source Serif 4", serif;
+        background-color: #070322;
+        color: #f4efe0;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        padding: 20px;
+        margin: 0;
+        font-family: "Playfair Display", serif;
+      }
+      nav {
+        background: #070322;
+        text-align: center;
+        padding: 0;
+      }
+
+      .nav-title {
+        /*
+      height: 60px;
+      font-size: 23px;
+      font-family: "Source Serif 4", serif;
+      word-spacing: 2px;
+      line-height: 60px;
+      padding: auto; */
+        background: #070322;
+        margin: 0 15px;
+        padding: 0 20px;
+        color: #f4efe0;
+        line-height: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        text-align: center;
+        padding: 20px;
+        font-family: "Source Serif 4", serif;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+      .login-form {
+        color: #f4efe0;
+        background-color: #070322;
+        font-family: "Source Serif 4", serif;
+      }
+
+      label {
+        text-align: left;
+        font-size: 20px;
+        display: block;
+        margin-left: 35%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+      }
+      select,
+      title {
+        text-align: left;
+        font-size: 20px;
+        display: block;
+        margin-left: 35%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 30%;
+        color: #f4efe0;
+      }
+
+      input[type="name"],
+      input[type="email"],
+      input[type="password"] {
+        text-align: left;
+        display: block;
+        box-sizing: border-box;
+        margin-left: 35%;
+        margin-bottom: 20px;
+        width: 30%;
+        height: 30%;
+        padding: 20px;
+      }
+
+      h5 {
+        font-size: 15px;
+        margin-left: 35%;
+        width: 30%;
+        padding-bottom: 10px;
+        font-weight: normal;
+      }
+      .login-button {
+        background-color: #f4efe0;
+        color: #070322;
+        font-size: 20px;
+        width: 250px;
+        height: 70px;
+        margin-left: 43%;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        border-radius: 9px;
+        padding: 8px;
+      }
+      /* --- Footer Styling --- */
+      footer {
+        background-color: #070322;
+        padding: 30px;
+        color: #f4efe0;
+      }
+
+      h3 {
+        padding: auto;
+        text-align: center;
+        font-size: 35px;
+        color: #f4efe0;
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
+      }
+      .footer-title {
+        color: #f4efe0;
+        text-decoration: none;
+        background: #070322;
+        font-family: "Source Serif 4", serif;
+      }
+
+      .footer-main-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        margin-top: 10px;
+      }
+
+      .footer-column {
+        width: 30%;
+      }
+
+      h4 {
+        font-size: 22px;
+        color: #f4efe0;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        padding-left: 2px;
+        font-family: "Source Serif 4", serif;
+        margin-left: -3px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-li {
+        background: none;
+        color: #f4efe0;
+        font-size: 19px;
+        line-height: 1.8;
+        display: block;
+        padding: 0;
+        font-family: "Source Serif 4", serif;
+        margin-bottom: 8px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #c9a04c;
+        font-size: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- title section -->
+    <h1>May Zin & Co.</h1>
+    <!-- nav section -->
+    <div>
+      <nav>
+        <a href="account.html" class="nav-title">My account</a>
+        <a href="#" class="nav-title">Contact Us</a>
+        <a href="#" class="nav-title">Client Service</a>
+      </nav>
+    </div>
+
+    <hr style="border-top: 1px solid #c9a04c" />
+
+    <!-- header section -->
+    <h2>Create A New Account</h2>
+
+    <div>
+      <form class="login-form">
+        <!-- Name Section -->
+        <label for="title">Title </label>
+        <select id="title" name="title" required>
+          <option value="" disabled>Please select a title</option>
+          <option value="Mr.">Mr.</option>
+          <option value="Ms." selected>Ms.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Miss.">Prefer Not To Say.</option>
+        </select>
+
+        <label for="name">First Name</label>
+        <input type="name" id="name" required placeholder=" First Name" />
+        <label for="name">Last Name</label>
+        <input type="name" id="name" required placeholder=" Last Name" />
+
+        <!-- Country Section -->
+        <label for="country">Country/Region</label>
+        <select id="country" name="country" required>
+          <option value="" disabled>Please select a country</option>
+          <option value="USA">United States</option>
+          <option value="CAN">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="AUS">Australia</option>
+          <option value="IND">India</option>
+        </select>
+
+        <!-- Email Section -->
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email address"
+        />
+        <label for="email">Confirm Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email address"
+        />
+
+        <!-- Password Section -->
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+        />
+        <h5>
+          Please enter 8 or more characters and at least one number. Leading or
+          trailing spaces will be ignored.
+        </h5>
+        <label for="password">Confirm Password</label>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+        />
+
+        <!-- Submit section -->
+        <button type="submit" class="login-button">Create Account</button>
+      </form>
+    </div>
+
+    <!-- footer section  -->
+    <footer>
+      <div>
+        <h3>May Zin & Co.</h3>
+        <div style="font-size: 25px">
+          Change Language :
+          <a href="#" class="footer-title">ENGLISH</a>
+        </div>
+        <hr style="border-top: 1px solid #c9a04c" />
+      </div>
+      <div class="footer-main-content">
+        <div class="footer-column">
+          <h4>SERVICES</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Schedule an Appointment</a></li>
+            <li><a href="#" class="footer-li">Request Assistance</a></li>
+            <li><a href="#" class="footer-li">Subscribe to Newsletters</a></li>
+            <li><a href="#" class="footer-li">Explore our Catalogs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CORPORATE</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Careers</a></li>
+            <li><a href="#" class="footer-li">Philanthropy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>LEGAL TERMS</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Terms of Use</a></li>
+            <li><a href="#" class="footer-li">Privacy Policy</a></li>
+            <li><a href="#" class="footer-li">Cookie Notice</a></li>
+            <li><a href="#" class="footer-li">Supply Chain</a></li>
+            <li><a href="#" class="footer-li">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>May Zin & Co. 2025&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div>
+    </footer>
+  </body>
+</html>
