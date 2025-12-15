@@ -48,6 +48,7 @@ video {
 }
 
 #def {
+  font-weight: bold;
   margin: 20px;
   color: #c9a04c;
   text-align: center;
@@ -55,10 +56,12 @@ video {
   font-family: "Source Serif 4", serif;
 }
 header p {
-  max-width: 900px;
-  margin: 15px auto;
-  padding: 0 20px;
+  font-size: 23px;
+  text-align: center;
+  list-style: 1.6px;
   font-family: "Playfair Display", serif;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 span {
@@ -73,6 +76,7 @@ span {
 }
 
 .abt-tit {
+  font-weight: bold;
   font-size: 50px;
   padding: 20px;
   margin-top: 50px;
@@ -111,28 +115,34 @@ span {
 }
 .abt-p {
   text-align: left;
-  margin-right: 15px;
+  margin-left: -100px;
   margin-top: 20px;
   line-height: 1.6;
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Source Serif 4", serif;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 9px;
+.about-img {
   width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-right: 150px;
 }
+
 .abt-h2 {
+  font-weight: bold;
   text-align: left;
   font-size: 50px;
   margin-left: auto;
   color: #c9a04c;
   font-family: "Source Serif 4", serif;
+  margin-left: -100px;
 }
 
 /* signature collection */
 .sig-tit {
+  font-weight: bold;
   text-align: left;
   margin-left: 6px;
   color: #f4efe0;
@@ -249,5 +259,5 @@ ul {
   padding-top: 20px;
   font-size: 14px;
   color: #c9a04c;
-  font-size: 45px;
+  font-size: 25px;
 }
