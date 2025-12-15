@@ -1,7 +1,16 @@
 * {
-  color: #f4efe0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   background-color: #070322;
-  font-family: "Source Serif 4", serif;
+  color: #f4efe0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -26,33 +35,32 @@ nav {
   font-size: 25px;
   font-weight: bold;
   text-decoration: none;
+  font-family: "Source Serif 4", serif;
 }
 a {
   text-decoration: none;
 }
 video {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  image-rendering: crisp-edges;
 }
-h1 {
-  text-align: center;
-  font-size: 70px;
-  font-family: "Playfair Display", serif;
-}
+
 #def {
+  margin: 20px;
   color: #c9a04c;
   text-align: center;
   font-size: 40px;
+  font-family: "Source Serif 4", serif;
 }
-p {
-  padding: 10px;
-  text-align: center;
-  font-size: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
+header p {
+  max-width: 900px;
+  margin: 15px auto;
+  padding: 0 20px;
+  font-family: "Playfair Display", serif;
 }
+
 span {
   color: #c9a04c;
   font-weight: bold;
@@ -64,19 +72,119 @@ span {
   background: linear-gradient(90deg, #c9a04c, #f4efe0);
 }
 
-h2 {
-  font-size: 30px;
-  padding: 10px;
+.abt-tit {
+  font-size: 50px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-family: "Source Serif 4", serif;
+}
+
+.line {
+  margin-top: 20px;
+  border-bottom: dashed #c9a04c 3px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* about brand  section */
+.container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.box-1,
+.box-2 {
+  width: 50%;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+}
+.box-2 {
+  padding-left: 10%;
+  text-align: left;
+}
+.abt-p {
+  text-align: left;
+  margin-right: 15px;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 25px;
+  font-family: "Source Serif 4", serif;
 }
 
 img {
   max-width: 100%;
   border-radius: 9px;
-  size: 50%;
+  width: 100%;
 }
-table {
-  position: relative;
+.abt-h2 {
+  text-align: left;
+  font-size: 50px;
+  margin-left: auto;
+  color: #c9a04c;
+  font-family: "Source Serif 4", serif;
 }
+
+/* signature collection */
+.sig-tit {
+  text-align: left;
+  margin-left: 6px;
+  color: #f4efe0;
+  font-size: 50px;
+  font-family: "Source Serif 4", serif;
+}
+.sig-p {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 6px;
+}
+/*carousel  */
+.collection-slider {
+  padding: 80px 0;
+  background: #070322;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* arrows outside */
+.carousel-control-prev {
+  left: -60px;
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+
+.slider-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .three-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* --- Footer Styling --- */
 footer {
   background-color: #070322;
@@ -90,7 +198,7 @@ h3 {
   font-size: 35px;
   color: #f4efe0;
   margin-bottom: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Source Serif 4", serif;
 }
 .footer-title {
   color: #f4efe0;

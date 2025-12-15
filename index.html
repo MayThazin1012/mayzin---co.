@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>May Zin & Co.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="icon" href="images/logo.jpg" />
     <link rel="stylesheet" href="style.css" />
 
@@ -16,18 +22,19 @@
     />
   </head>
   <body>
+    <!-- nav section -->
     <div>
       <nav>
         <a href="account.html" class="nav-title">My account</a>
         <a href="#" class="nav-title">Contact Us</a>
-        <a href="#" class="nav-title">Client Service</a>
+        <a href="service.html" class="nav-title">Client Service</a>
       </nav>
     </div>
     <!-- profile section  -->
     <header>
-      <h1>May Zin & Co.</h1>
       <video src="images/mayzin-&-co-vd.mp4" autoplay muted loop></video>
       <h1 id="def">May Zin & Co.</h1>
+      <p><i>Timeless Jewelry, Crafted with Meaning</i></p>
       <p>
         <span> May Zin & Co.</span> is a distinguished Fine Jewelry Atelier
         dedicated to crafting pieces of enduring beauty and exceptional quality.
@@ -40,88 +47,85 @@
         passing trends.
       </p>
     </header>
-    <div class="gradient-line"></div>
-    <!-- incredible collection  -->
+    <div class="line"></div>
+    <!-- about section -->
     <section>
-      <h2>Incredible Collection</h2>
+      <h2 class="abt-tit">About May Zin & Co.</h2>
 
-      <div>
-        <div>
-          <img src="images/inc-jw1.jpg" alt="mysterious raindrops" />
-
-          <p>
-            The Mysterious Raindrops is a signature line of High Jewelry that
-            captures the ephemeral beauty of water and light. Inspired by
-            cloudbursts, shimmering tides, and the graceful movement of drops,
-            this collection is defined by its fluid, sculptural forms and a
-            captivating palette of blue and white. <br />Each piece features
-            meticulously hand-finished white enamel or mother-of-pearl
-            contrasted with waves of pave-set sapphires and diamonds. The
-            defining feature is the use of highly polished, custom-cut blue
-            gemstones (like lapis, chalcedony, or sapphire) carved into
-            elongated, kinetic drop shapes, designed to mimic the weight and
-            movement of actual water. <br />This is crafted for the
-            sophisticated collector who seeks jewelry that is both intensely
-            beautiful and deeply evocative, embodying a unique blend of opulent
-            artistry and natural poetry.
-          </p>
+      <div class="container">
+        <div class="box-1">
+          <img class="about-img" src="images/d9.jpg" alt="may zin jewelry" />
         </div>
-        <div>
-          <img src="images/inc-jw7.jpg" alt="powerful simple" />
-          <p>
-            The Powerful Simple is a signature line of Haute Joaillerie that
-            redefines minimalist luxury through maximum diamond impact. Inspired
-            by the concept of effortless grandeur and pure light, this is
-            characterized by its streamlined elegance and the dynamic interplay
-            of various diamond cuts.<br />
-            Each piece features immaculately set, high-clarity white
-            diamonds—including brilliant, baguette, emerald, and pear
-            cuts—arranged in architectural yet fluid compositions. The designs
-            maintain a clean, monochromatic palette in platinum or white gold,
-            allowing the intrinsic fire and sparkle of the diamonds to command
-            attention.<br />
-            This collection is crafted for the discerning connoisseur who
-            understands that subtlety can be the most potent form of luxury,
-            seeking jewelry that is powerfully elegant, unequivocally brilliant,
-            and timeless in its simplicity.
-          </p>
-        </div>
-        <div>
-          <img src="images/inc-jw8.PNG" alt="" />
 
-          <p>
-            The AURA Collection by May Zin & Co. is the ultimate expression of
-            our Haute Joaillerie artistry, defined by transformative luxury and
-            unparalleled craftsmanship. This exclusive, limited-edition
-            collection moves beyond mere ornamentation, crafting wearable
-            sculptures that embody powerful narratives from the natural and
-            cosmic world.<br />
-            Each unique piece—from the serene drama of water to the explosive
-            brilliance of light and the rich texture of botanical life—is
-            realized through a rare fusion of traditional techniques, such as
-            intricate sculpting and specialized gem cutting, with vibrant,
-            bespoke materials like enamel and carved precious stones. <br />
-            The AURA Collection is created for the collector who seeks a
-            singular, powerful statement: jewelry that possesses an indefinable,
-            magnetic presence and is destined to become a generational heirloom.
+        <div class="box-2">
+          <h2 class="abt-h2">Our Passion</h2>
+          <p class="abt-p">
+            Founded by May Zin, a visionary jeweler with a passion for timeless
+            design and exceptional craftsmanship, May Zin & Co. has quickly
+            established itself as a premier destination for discerning jewelry
+            enthusiasts. With a background in both traditional jewelry-making
+            techniques and contemporary design principles, May Zin brings a
+            unique perspective to the world of fine jewelry.
+          </p>
+          <p class="abt-p">
+            At May Zin & Co., we believe that jewelry is more than just an
+            accessory; it is a form of self-expression and a reflection of one's
+            personal journey. Each piece in our collection is thoughtfully
+            designed to capture the essence of elegance and sophistication,
+            while also telling a story that resonates with the wearer.
           </p>
         </div>
       </div>
-      <p>
-        The <span>Incredible Collection </span>by May Zin & Co. is a profoundly
-        intimate exploration of
-        <span>Natural Wonders and Personal Journeys.</span> This collection
-        features
-        <span>one-of-a-kind and extremely limited-edition pieces,</span> each
-        centered around a
-        <span>collector-grade, ethically-sourced gemstone </span>(such as a rare
-        Kashmir Sapphire or Paraiba Tourmaline). Crafted with an emphasis on
-        <span>fluid, nature-inspired settings in 18k Fair-mined Gold,</span> the
-        Incredible Collection serves as an
-        <span>investment in legacy—jewelry</span> that is defined not just by
-        its rarity, but by the extraordinary story embedded in every facet and
-        curve.
+    </section>
+
+    <div class="gradient-line"></div>
+
+    <!-- Signature Collection  -->
+    <section class="collection-slider">
+      <h2 class="sig-tit">Signature Collection</h2>
+      <p class="sig-p">
+        Classic designs with a modern touch — perfect for everyday elegance.
       </p>
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="three-grid">
+              <img src="images/d10.jpg" class="slider-img" />
+              <img src="images/d11.jpg" class="slider-img" />
+              <img src="images/d12.jpg" class="slider-img" />
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="three-grid">
+              <img src="images/d15.jpg" class="slider-img" />
+              <img src="images/dearing.jpg" class="slider-img" />
+              <img src="images/dring.jpg" class="slider-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </section>
 
     <!-- footer section  -->
