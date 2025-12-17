@@ -1,140 +1,85 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font-family: "Source Serif 4", serif;
+  background-color: #070322;
+  color: #f4efe0;
 }
-
-html,
 body {
   background-color: #070322;
   color: #f4efe0;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  font-family: "Source Serif 4", serif;
 }
 
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
 nav {
-  background: #c9a04c;
+  background: #070322;
   text-align: center;
   padding: 0;
 }
 
 .nav-title {
-  background: #c9a04c;
+  background: #070322;
   margin: 0 15px;
   padding: 0 20px;
-  color: #070322;
+  color: #f4efe0;
   line-height: 60px;
   font-size: 25px;
   font-weight: bold;
   text-decoration: none;
   font-family: "Source Serif 4", serif;
 }
-a {
-  text-decoration: none;
-}
-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #c9a04c;
 }
 
-#def {
-  font-weight: bold;
-  margin: 20px;
-  color: #c9a04c;
-  text-align: center;
-  font-size: 40px;
-  font-family: "Source Serif 4", serif;
-}
-header p {
-  font-size: 23px;
-  text-align: center;
-  list-style: 1.6px;
-  font-family: "Playfair Display", serif;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-span {
-  color: #c9a04c;
-  font-weight: bold;
-}
-.gradient-line {
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background: linear-gradient(90deg, #c9a04c, #f4efe0);
-}
-
-.abt-tit {
-  font-weight: bold;
-  font-size: 50px;
+h1 {
+  color: #f4efe0;
   padding: 20px;
-  margin-top: 50px;
-  margin-left: 10px;
-  font-family: "Source Serif 4", serif;
-}
-
-.line {
-  margin-top: 20px;
-  border-bottom: dashed #c9a04c 3px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* about brand  section */
-.container {
-  display: flex;
-  width: 90%;
-  align-items: center;
-  margin: 60px auto;
-}
-
-.box-1,
-.box-2 {
-  width: 50%;
-}
-
-.box-1 {
-  display: flex;
-  justify-content: center;
-}
-.box-2 {
-  padding-left: 10%;
-  text-align: left;
-}
-.abt-p {
-  text-align: left;
-  margin-left: -100px;
-  margin-top: 20px;
-  line-height: 1.6;
-  font-size: 23px;
-  font-family: "Source Serif 4", serif;
-}
-
-.about-img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  border-radius: 12px;
-  margin-right: 150px;
-}
-
-.abt-h2 {
-  font-weight: bold;
-  text-align: left;
   font-size: 50px;
-  margin-left: auto;
-  color: #c9a04c;
-  font-family: "Source Serif 4", serif;
-  margin-left: -100px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
-/* signature collection */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 60px 100px;
+}
+
+.product img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.name {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #f4efe0;
+  font-family: serif;
+}
+.def {
+  text-align: justify;
+}
+.product:hover .name {
+  bottom: 10px;
+}
+
 .sig-tit {
+  margin: 20px;
   font-weight: bold;
   text-align: left;
   margin-left: 6px;
@@ -187,8 +132,6 @@ span {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-/* --- Footer Styling --- */
 footer {
   background-color: #070322;
   padding: 30px;

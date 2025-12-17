@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SERVICES</title>
+    <link rel="icon" href="images/logo1.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="service.css" />
 
@@ -11,20 +23,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <!-- nav section -->
-  <div>
-    <nav>
-      <a href="account.html" class="nav-title">My account</a>
-      <a href="#" class="nav-title">Contact Us</a>
-      <a href="service.html" class="nav-title">Client Service</a>
-    </nav>
-  </div>
 
   <body>
+    <h1>May Zin & Co.</h1>
+    <!-- nav section -->
+    <div>
+      <nav>
+        <a href="luxury.html" class="nav-title">Luxury Jewellery</a>
+        <a href="account.html" class="nav-title">My account</a>
+        <a href="#" class="nav-title">Client Service</a>
+      </nav>
+    </div>
+
+    <div class="hw-rule"></div>
     <h1 class="title">Services</h1>
 
     <div class="container">
@@ -34,31 +49,55 @@
 
       <div class="box-2">
         <h2 class="box-2-h2">Custom Counters</h2>
-        <p>
+        <p class="box-2-p">
           We design and build custom counters tailored to your specific needs.
           Whether you need a simple tally counter or a complex multi-functional
           device, we have the expertise to deliver.
         </p>
       </div>
     </div>
+    <div class="hw-rule"></div>
 
-    <div class="line"></div>
-    <section>
-      <div>
-        <nav class="nav-info">
-          <a href="#" class="nav-info">Schedule An Appointment</a>
-          <a href="#" class="nav-info">Request Assistance</a>
-          <a href="#" class="nav-info">Subscribe to Newsletters</a>
-        </nav>
-      </div>
-    </section>
-    <div class="line"></div>
+    <ul class="nav justify-content-between hw-nav">
+      <li class="nav-item">
+        <button
+          class="nav-link hw-link"
+          data-bs-toggle="tab"
+          data-bs-target="#appointment"
+        >
+          Schedule an Appointment
+        </button>
+      </li>
 
-    <a href="">
-      <div>
+      <li class="nav-item">
+        <button
+          class="nav-link hw-link"
+          data-bs-toggle="tab"
+          data-bs-target="#assistance"
+        >
+          Request Assistance
+        </button>
+      </li>
+
+      <li class="nav-item">
+        <button
+          class="nav-link hw-link"
+          data-bs-toggle="tab"
+          data-bs-target="#newsletter"
+        >
+          Subscribe to Newsletters
+        </button>
+      </li>
+    </ul>
+
+    <div class="hw-rule"></div>
+    <div class="tab-content hw-pages">
+      <div class="tab-pane fade show active" id="appointment">
+        <h3 class="hw-h3">Salon Details</h3>
+        <p class="hw-p">Get Appointment here</p>
         <form class="login-form">
           <!-- Country Section -->
-          <label for="country">Salon Country/Region</label>
+          <label for="country" class="hw-lab">Salon Country/Region</label>
           <select id="country" name="country" required>
             <option value="" disabled>Please select a country</option>
             <option value="USA">United States</option>
@@ -68,7 +107,7 @@
             <option value="IND">India</option>
           </select>
 
-          <label for="text">Select A Salon</label>
+          <label for="text" class="hw-lab">Select A Salon</label>
           <select id="salon" name="salon" required>
             <option value="" disabled>Please select a country</option>
             <option value="USA">United States</option>
@@ -78,16 +117,182 @@
             <option value="IND">India</option>
           </select>
 
-          <label for="date">Date</label>
+          <label for="date" class="hw-lab">Date</label>
           <input type="date" id="date" required placeholder="Date" />
 
-          <label for="time">Time </label>
+          <label for="time" class="hw-lab">Time </label>
           <input type="time" id="time" required placeholder="Time" />
+          <p class="hw-p">
+            If you're unable to select certain dates, kindly contact the May Zin
+            & Co. Salon directly by phone.
+            <a href="#" style="color: #c9a04c">Find a Salon.</a>
+          </p>
+
+          <br />
+
+          <h3 class="hw-h3">Personal Information</h3>
+          <div>
+            <form class="login-form">
+              <!-- Name Section -->
+              <label for="title" class="hw-lab">Title </label>
+              <select id="title" name="title" required>
+                <option value="" disabled>Please select a title</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms." selected>Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss.">Prefer Not To Say.</option>
+              </select>
+
+              <label for="name" class="hw-lab">First Name</label>
+              <input type="name" id="name" required placeholder=" First Name" />
+              <label for="name" class="hw-lab">Last Name</label>
+              <input type="name" id="name" required placeholder=" Last Name" />
+
+              <!-- Country Section -->
+              <label for="country" class="hw-lab">Country/Region</label>
+              <select id="country" name="country" required>
+                <option value="" disabled>Please select a country</option>
+                <option value="USA">United States</option>
+                <option value="CAN">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AUS">Australia</option>
+                <option value="IND">India</option>
+              </select>
+
+              <!-- Submit section -->
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" />
+                I have read and accept the <a href="#">Privacy Policy</a>.
+              </label>
+            </div>
+          </div>
 
           <!-- Submit section -->
-          <button type="submit" class="login-button">Create Account</button>
+          <button type="submit" class="submit-button">Submit</button>
         </form>
       </div>
-    </a>
+
+      <div class="tab-pane fade" id="newsletter">
+        <h3 class="hw-h3">Personal Information</h3>
+        <div>
+          <form class="login-form">
+            <!-- Name Section -->
+            <label for="title" class="hw-lab">Title </label>
+            <select id="title" name="title" required>
+              <option value="" disabled>Please select a title</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Ms." selected>Ms.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Miss.">Prefer Not To Say.</option>
+            </select>
+
+            <label for="name" class="hw-lab">First Name</label>
+            <input type="name" id="name" required placeholder=" First Name" />
+            <label for="name" class="hw-lab">Last Name</label>
+            <input type="name" id="name" required placeholder=" Last Name" />
+
+            <!-- Country Section -->
+            <label for="country" class="hw-lab">Country/Region</label>
+            <select id="country" name="country" required>
+              <option value="" disabled>Please select a country</option>
+              <option value="USA">United States</option>
+              <option value="CAN">Canada</option>
+              <option value="UK">United Kingdom</option>
+              <option value="AUS">Australia</option>
+              <option value="IND">India</option>
+            </select>
+
+            <!-- Submit section -->
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" />
+              I have read and accept the <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="assistance">
+        <h3 class="hw-h3">Inquiry</h3>
+        <div>
+          <form class="login-form">
+            <select id="title" name="title" required>
+              <option value="Reason">REASON FOR INQUIRY</option>
+              <option value="Sales/Care">Afterr Sales/Care</option>
+              <option value="Request">Piercing Request</option>
+              <option value="Details">Product Details</option>
+              <option value="Order">Special Order Inquiry</option>
+            </select>
+
+            <textarea
+              id="details"
+              name="details"
+              rows="10"
+              required
+              placeholder="Please provide more details( 200 characters max)"
+            ></textarea>
+
+            <!-- Submit section -->
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" />
+              I have read and accept the <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section  -->
+    <footer>
+      <div>
+        <h3>May Zin & Co.</h3>
+        <div style="font-size: 25px">
+          Change Language :
+          <a href="#" class="footer-title">ENGLISH</a>
+        </div>
+        <hr style="border-top: 1px solid #c9a04c" />
+      </div>
+      <div class="footer-main-content">
+        <div class="footer-column">
+          <h4>SERVICES</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Schedule an Appointment</a></li>
+            <li><a href="#" class="footer-li">Request Assistance</a></li>
+            <li><a href="#" class="footer-li">Subscribe to Newsletters</a></li>
+            <li><a href="#" class="footer-li">Explore our Catalogs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CORPORATE</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Careers</a></li>
+            <li><a href="#" class="footer-li">Philanthropy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>LEGAL TERMS</h4>
+          <ul>
+            <li><a href="#" class="footer-li">Terms of Use</a></li>
+            <li><a href="#" class="footer-li">Privacy Policy</a></li>
+            <li><a href="#" class="footer-li">Cookie Notice</a></li>
+            <li><a href="#" class="footer-li">Supply Chain</a></li>
+            <li><a href="#" class="footer-li">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>May Zin & Co. 2025&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div>
+    </footer>
   </body>
 </html>
