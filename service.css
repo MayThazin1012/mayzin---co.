@@ -302,6 +302,21 @@ ul {
   color: #c9a04c;
   font-size: 25px;
 }
+#upBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c9a04c;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 35px;
+}
+
 @media (max-width: 768px) {
   h1,
   .title {
