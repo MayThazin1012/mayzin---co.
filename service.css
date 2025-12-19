@@ -8,7 +8,9 @@ body {
   color: #f4efe0;
   font-family: "Source Serif 4", serif;
 }
-
+.tit-a {
+  color: #f4efe0;
+}
 h1 {
   text-align: center;
   font-size: 50px;

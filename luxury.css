@@ -7,6 +7,7 @@ body {
   background-color: #070322;
   color: #f4efe0;
   font-family: "Source Serif 4", serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -34,6 +35,7 @@ nav {
   font-family: "Source Serif 4", serif;
 }
 hr {
+  margin-bottom: 20px;
   margin: 0;
   border: none;
   border-top: 1px solid #c9a04c;
@@ -78,20 +80,78 @@ h1 {
   bottom: 10px;
 }
 
+/* jade section
+ */
+.container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-1,
+.box-2 {
+  width: 50%;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 7px;
+  width: 100%;
+  height: 80%;
+}
+.j-sec:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+
+.box-2 {
+  padding-left: 10%;
+}
+
+.box-2-h2 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: -10px;
+  font-family: "Playfair Display", serif;
+  color: #c9a04c;
+}
+
+.box-2-p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 450px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
 .sig-tit {
-  margin: 20px;
+  margin: 30px;
+
   font-weight: bold;
   text-align: left;
-  margin-left: 6px;
+  margin-left: 10px;
   color: #f4efe0;
   font-size: 50px;
   font-family: "Source Serif 4", serif;
 }
+
+.sig-tit-p {
+  margin: 30px;
+  margin-left: 10px;
+  font-family: "Source Serif 4", serif;
+  font-size: 20px;
+}
 .sig-p {
   font-family: "Playfair Display", serif;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
-  margin-left: 6px;
+  margin-left: 10px;
 }
 /*carousel  */
 .collection-slider {
@@ -191,6 +251,7 @@ ul {
   padding: 0;
   font-family: "Source Serif 4", serif;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .footer-bottom {
