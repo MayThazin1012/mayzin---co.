@@ -25,7 +25,7 @@ nav {
   padding: 0 20px;
   color: #070322;
   line-height: 60px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   font-family: "Source Serif 4", serif;
@@ -45,11 +45,12 @@ video {
   margin: 20px;
   color: #c9a04c;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Source Serif 4", serif;
 }
 header p {
-  font-size: 23px;
+  text-align: justify;
+  font-size: 20px;
   text-align: center;
   list-style: 1.6px;
   font-family: "Playfair Display", serif;
@@ -70,7 +71,7 @@ span {
 
 .abt-tit {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
   padding: 20px;
   margin-top: 50px;
   margin-left: 10px;
@@ -111,7 +112,7 @@ span {
   margin-left: -100px;
   margin-top: 20px;
   line-height: 1.6;
-  font-size: 23px;
+  font-size: 20px;
   font-family: "Source Serif 4", serif;
 }
 
@@ -126,7 +127,7 @@ span {
 .abt-h2 {
   font-weight: bold;
   text-align: left;
-  font-size: 50px;
+  font-size: 30px;
   margin-left: auto;
   color: #c9a04c;
   font-family: "Source Serif 4", serif;
@@ -139,12 +140,12 @@ span {
   text-align: left;
   margin-left: 6px;
   color: #f4efe0;
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Source Serif 4", serif;
 }
 .sig-p {
   font-family: "Playfair Display", serif;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
   margin-left: 6px;
 }
@@ -198,7 +199,7 @@ footer {
 h3 {
   padding: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   color: #f4efe0;
   margin-bottom: 20px;
   font-family: "Source Serif 4", serif;
@@ -210,7 +211,7 @@ h3 {
   font-family: "Source Serif 4", serif;
 }
 .footer-div {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
 }
 .footer-main-content {
@@ -225,7 +226,7 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 17px;
   color: #f4efe0;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -242,7 +243,7 @@ ul {
 .footer-li {
   background: none;
   color: #f4efe0;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 1.8;
   display: block;
   padding: 0;
@@ -253,7 +254,97 @@ ul {
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  font-size: 14px;
+  font-size: 10px;
   color: #c9a04c;
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .nav-title {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  header p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+  }
+
+  .abt-tit,
+  .sig-tit,
+  #def {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .box-1,
+  .box-2 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .abt-h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .abt-p {
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .about-img {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .three-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header p {
+    font-size: 16px;
+  }
+
+  .three-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-img {
+    height: auto;
+  }
+
+  .nav-title {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
 }

@@ -13,7 +13,7 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   padding: 20px;
   margin: 0;
   font-family: "Playfair Display", serif;
@@ -30,7 +30,7 @@ nav {
   padding: 0 20px;
   color: #f4efe0;
   line-height: 60px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   font-family: "Source Serif 4", serif;
@@ -41,7 +41,7 @@ a {
 }
 .title {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
 }
 .container {
@@ -67,12 +67,12 @@ img {
 }
 
 .box-2 {
-  padding-left: 10%;
+  padding-left: 8%;
   border: 2px dashed #f4efe0;
 }
 
 .box-2-h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: -10px;
   font-family: "Playfair Display", serif;
@@ -85,6 +85,7 @@ img {
   max-width: 450px;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .line {
   margin-top: 10px;
@@ -97,7 +98,7 @@ img {
   padding: 0 20px;
   color: #c9a04c;
   line-height: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -125,7 +126,7 @@ body {
 }
 
 .hw-link {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #f4efe0;
@@ -155,7 +156,7 @@ body {
 }
 .hw-lab {
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
   margin-left: 20px;
   padding-bottom: 10px;
@@ -164,7 +165,7 @@ body {
 select,
 title {
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
   margin-left: 20px;
   padding-bottom: 10px;
@@ -190,7 +191,7 @@ input[type="country"] {
 .submit-button {
   background-color: #f4efe0;
   color: #070322;
-  font-size: 20px;
+  font-size: 15px;
   width: 250px;
   height: 70px;
   margin-left: 20px;
@@ -213,7 +214,7 @@ label {
 }
 .checkbox {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 }
 
@@ -230,7 +231,7 @@ textarea {
   border: 1px solid #767676;
   background-color: #070322;
   color: #f4efe0;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 20px;
 }
 footer {
@@ -242,7 +243,7 @@ footer {
 h3 {
   padding: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   color: #f4efe0;
   margin-bottom: 20px;
   font-family: "Source Serif 4", serif;
@@ -269,7 +270,7 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 17px;
   color: #f4efe0;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -286,7 +287,7 @@ ul {
 .footer-li {
   background: none;
   color: #f4efe0;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 1.8;
   display: block;
   padding: 0;
@@ -297,7 +298,101 @@ ul {
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  font-size: 14px;
+  font-size: 10px;
   color: #c9a04c;
   font-size: 25px;
+}
+@media (max-width: 768px) {
+  h1,
+  .title {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 95%;
+    gap: 20px;
+  }
+
+  .box-1,
+  .box-2 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border-width: 1px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .footer-main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  .title {
+    font-size: 20px;
+  }
+
+  .nav-title {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .box-2-h2 {
+    font-size: 1.5em;
+  }
+
+  .box-2-p {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+  .hw-h3,
+  .hw-p,
+  .hw-lab {
+    margin-left: 10px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 95% !important;
+  }
+
+  .submit-button {
+    width: 180px;
+    height: 50px;
+  }
 }
